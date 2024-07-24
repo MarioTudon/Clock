@@ -81,7 +81,7 @@ body {
     transform: translate(-50%, -100%);
     width: 0.1rem;
     height: 7rem;
-    background-color: white;
+    background-color: red;
     transform-origin: center bottom;
     transform: translate(-50%, -100%) rotate(var(--seconds));
     border-radius: 1rem;
