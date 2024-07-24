@@ -86,7 +86,7 @@ body {
     transform: translate(-50%, -100%) rotate(var(--seconds));
     border-radius: 1rem;
     z-index: 0;
-    box-shadow: .1rem .1rem .15rem;
+    box-shadow: .1rem .1rem .25rem;
 }
 
 @media screen and (max-width: 800px) {
