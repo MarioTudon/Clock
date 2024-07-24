@@ -2,7 +2,7 @@
     --hours: 0deg;
     --minutes: 0deg;
     --seconds: 0deg;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 html {
@@ -26,7 +26,8 @@ body {
     height: 20rem;
     border-radius: 50%;
     background-color: rgb(109, 109, 109);
-    border: solid 5px rgb(199, 199, 199);
+    border: solid .25rem rgb(199, 199, 199);
+    box-shadow: inset .25rem .25rem 0.6rem;
 }
 
 #circle::after{
@@ -36,9 +37,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    width: 1rem;
-    height: 1rem;
-    background-color: rgb(71, 71, 71);
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: rgb(109, 109, 109);
+    border: solid .15rem white;
+    z-index: 3;
 }
 
 #hours {
@@ -52,6 +55,8 @@ body {
     transform-origin: center bottom;
     transform: translate(-50%, -100%) rotate(var(--hours));
     border-radius: 1rem;
+    z-index: 2;
+    box-shadow: .1rem .1rem .25rem;
 }
 
 #minutes {
@@ -65,6 +70,8 @@ body {
     transform-origin: center bottom;
     transform: translate(-50%, -100%) rotate(var(--minutes));
     border-radius: 1rem;
+    z-index: 1;
+    box-shadow: .1rem .1rem .25rem;
 }
 
 #seconds {
@@ -78,6 +85,8 @@ body {
     transform-origin: center bottom;
     transform: translate(-50%, -100%) rotate(var(--seconds));
     border-radius: 1rem;
+    z-index: 0;
+    box-shadow: .1rem .1rem .15rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -91,9 +100,21 @@ body {
     }
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 700px) {
     :root {
         font-size: 15px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    :root {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    :root {
+        font-size: 11px;
     }
 }
 
