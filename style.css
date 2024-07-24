@@ -50,7 +50,7 @@ body {
     left: 50%;
     transform: translate(-50%, -100%);
     width: 0.5rem;
-    height: 7rem;
+    height: 6rem;
     background-color: white;
     transform-origin: center bottom;
     transform: translate(-50%, -100%) rotate(var(--hours));
